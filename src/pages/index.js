@@ -3,10 +3,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import styled from "styled-components"
 import Img from "gatsby-image"
-import HeaderLogo from "../components/globals/header/HeaderLogo"
 import Section from "../components/globals/section/Section"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
-import Intro from "../components/Intro"
 import Gallery from "../components/Gallery"
 
 const Index = () => {

@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Section from "../components/globals/section/Section"
-import SignUpForm from "../components/SignupForm"
+import SignUpForm from "../components/SignUpForm"
 
 const Intro = () => {
   return (
