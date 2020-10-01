@@ -21,6 +21,13 @@ const Index = () => {
           }
         }
       }
+      rina: file(relativePath: { eq: "la-dolce-rina-bg-1.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1920, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
       matt: file(relativePath: { eq: "matt.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 200, quality: 90) {
@@ -35,20 +42,25 @@ const Index = () => {
     <Layout>
       <StyledCookbook>
         <Section style={{ width: "100vw", flexDirection: "column" }}>
-          <div className="box box-title">
-            <h1>Bushels and Feasts</h1>
-            <h3>
-              170 FARM TO TABLE RECIPES FOR A GLUTEN AND GRAIN FREE LIFESTYLE
-            </h3>
-            <p>By Rina Thoma with Sarah Fragoso</p>
-            <p>
-              BUSHELS AND FEASTS is a collaboration between Le Cordon Bleu
-              trained chef Rina Thoma and international bestselling cookbook
-              author Sarah Fragoso. The result is a celebration of real food
-              inspired by California and French cuisine; beautiful, delicious,
-              market-fresh, family meals free from gluten and grains and filled
-              with healthy fats and decadent desserts.{" "}
-            </p>
+          <div className="header-container">
+            <div className="rina-image">
+              <Img fluid={data.rina.childImageSharp.fluid} />
+            </div>
+            <div className="box box-title">
+              <h1>Bushels and Feasts</h1>
+              <h3>
+                170 FARM TO TABLE RECIPES FOR A GLUTEN AND GRAIN FREE LIFESTYLE
+              </h3>
+              <p>By Rina Thoma with Sarah Fragoso</p>
+              <p>
+                BUSHELS AND FEASTS is a collaboration between Le Cordon Bleu
+                trained chef Rina Thoma and international bestselling cookbook
+                author Sarah Fragoso. The result is a celebration of real food
+                inspired by California and French cuisine; beautiful, delicious,
+                market-fresh, family meals free from gluten and grains and
+                filled with healthy fats and decadent desserts.{" "}
+              </p>
+            </div>
           </div>
           <div className=" bio-gallery">
             {images.map(({ node }, index) => {
@@ -425,6 +437,22 @@ const StyledCookbook = styled.div`
       margin-bottom: 1rem;
     }
   }
+  .header-container {
+    width: 80%;
+    margin: 2rem auto 0rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    .rina-image {
+      flex: 1;
+      margin-right: 2rem;
+    }
+    .box-title {
+      flex: 2;
+      color: var(--mainColor);
+    }
+  }
   .bio-gallery {
     width: 100vw;
     margin: 2rem auto;
@@ -433,9 +461,6 @@ const StyledCookbook = styled.div`
   }
   .bio-item {
     flex-basis: 25%;
-  }
-  .box-title {
-    color: var(--mainColor);
   }
   .food-gallery {
     width: 100vw;
@@ -505,6 +530,11 @@ const StyledCookbook = styled.div`
     .matt-image,
     .matt-copy {
       flex-basis: 100%;
+    }
+    .header-container {
+      .rina-image {
+        flex-basis: 100%;
+      }
     }
   }
 `
