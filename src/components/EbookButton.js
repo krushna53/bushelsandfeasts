@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class EbookButton extends Component {
   componentDidMount() {
-    this.stripe = window.Stripe(`pk_live_51HYN50KwzUaWz0rWRWUeLlrNz555eZn3hQIQ9yjWCvuSRgmIlEYAdlLTBrIVbI1GLBTbHT25FasIRrcdeWI3Nw4T00EYGlGgpC``)
+    this.stripe = window.Stripe(`pk_live_51HYN50KwzUaWz0rWRWUeLlrNz555eZn3hQIQ9yjWCvuSRgmIlEYAdlLTBrIVbI1GLBTbHT25FasIRrcdeWI3Nw4T00EYGlGgpC`)
   }
 
   render() {
