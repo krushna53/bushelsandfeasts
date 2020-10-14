@@ -40,7 +40,7 @@ const Index = () => {
     }
   `)
   const images = data.getImages.edges
-  const Bookitem = {price: process.env.BOOK_PRICE_ID, quantity: 1};
+  const Bookitem = {price: `price_1HcBHNKwzUaWz0rWmMItssY9`, quantity: 1};
   return (
     <Layout>
       <StyledCookbook>

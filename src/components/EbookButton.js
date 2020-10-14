@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class EbookButton extends Component {
   componentDidMount() {
-    this.stripe = window.Stripe(process.env.STRIPE_PUB_KEY)
+    this.stripe = window.Stripe(`pk_live_51HYN50KwzUaWz0rWRWUeLlrNz555eZn3hQIQ9yjWCvuSRgmIlEYAdlLTBrIVbI1GLBTbHT25FasIRrcdeWI3Nw4T00EYGlGgpC``)
   }
 
   render() {
@@ -18,8 +18,8 @@ class EbookButton extends Component {
               // Note that it is not guaranteed your customers will be redirected to this
               // URL *100%* of the time, it's possible that they could e.g. close the
               // tab between form submission and the redirect.
-              successUrl: `${process.env.BASE_URL}/success`,
-              cancelUrl: `${process.env.BASE_URL}/cancel`,
+              successUrl: `https://www.bushelsandfeasts.com/success`,
+              cancelUrl: `https://www.bushelsandfeasts.com/cancel`,
             })
             .then(function(result) {
               if (result.error) {
