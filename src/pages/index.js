@@ -120,6 +120,17 @@ const Index = () => {
               cuisine that celebrates the bounty of local ingredients and those
               who so beautifully craft that food.
             </p>
+            <Section
+              style={{
+                backgroundColor: "#f1f1f1",
+                width: "400px",
+                padding: "2rem",
+                margin: "2rem auto",
+              }}
+            >
+              <SignUpForm />
+            </Section>
+
             <a className="cookbook-button" href="/">
               <button>Buy eCookbook</button>
             </a>
@@ -460,7 +471,7 @@ const Index = () => {
         <Section
           style={{
             backgroundColor: "#f1f1f1",
-            width: "500px",
+            width: "400px",
             padding: "2rem",
             margin: "2rem auto",
           }}
