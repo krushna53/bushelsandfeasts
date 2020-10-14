@@ -5,7 +5,7 @@ import addToMailchimp from "gatsby-plugin-mailchimp"
 const SignUpForm = () => {
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
-  const [message, setMessage] = useState("GET YOUR COOKBOOK")
+  const [message, setMessage] = useState("GET YOUR FREE eCOOKBOOK")
 
   const emailHandler = e => {
     setEmail(e.target.value)
@@ -17,7 +17,7 @@ const SignUpForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    setMessage("Thank you for Subscribing!")
+    setMessage("Thank you for Downloading!")
     addToMailchimp(email, {
       FNAME: name,
     })
