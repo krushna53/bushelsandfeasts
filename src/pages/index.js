@@ -7,6 +7,7 @@ import Section from "../components/globals/section/Section"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
 import Gallery from "../components/Gallery"
 import SignUpForm from "../components/SignUpForm"
+import EbookButton from "../components/EbookButton"
 
 const Index = () => {
   const data = useStaticQuery(graphql`
@@ -39,6 +40,7 @@ const Index = () => {
     }
   `)
   const images = data.getImages.edges
+  const Bookitem = {price: process.env.BOOK_PRICE_ID, quantity: 1};
   return (
     <Layout>
       <StyledCookbook>
@@ -132,7 +134,7 @@ const Index = () => {
             </Section>
 
             <a className="cookbook-button" href="/">
-              <button>Buy eCookbook</button>
+            <EbookButton label ={"Buy eCookbook"} lineItems = {[Bookitem]}/>
             </a>
             <p style={{ fontSize: "14px" }}>
               At this time, BUSHELS & FEASTS is only available in eBook form. An
@@ -447,7 +449,7 @@ const Index = () => {
             </ul>
             <br />
             <a className="cookbook-button" href="/">
-              <button>Buy eCookbook</button>
+              <EbookButton label ={"Buy eCookBook"} lineItems = {[Bookitem]}/>
             </a>
             <p style={{ fontSize: "14px" }}>
               At this time, BUSHELS & FEASTS is only available in eBook form. An
