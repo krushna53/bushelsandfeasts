@@ -2,7 +2,7 @@ import React, { Component } from "react"
 
 class EbookButton extends Component {
   componentDidMount() {
-    this.stripe = window.Stripe(process.env.STRIPE_PUB_KEY)
+    this.stripe = window.Stripe(`${process.env.STRIPE_PUB_KEY}`)
   }
 
   render() {
