@@ -129,6 +129,9 @@ const Index = () => {
               containing 10 irresistible, gluten and grain-free, real food
               desserts!
             </p>
+            <a className="cookbook-button" href="https://www.amazon.com/Bushels-Feasts-Recipes-Gluten-Lifestyle/dp/1735926213/ref=sr_1_1?dchild=1&keywords=bushels+and+feasts&qid=1606956534&sr=8-1" target="_blank">
+              <button> Buy Hardcover Cookbook </button>
+            </a>
             <a className="cookbook-button" href="/">
               <EbookButton label={"Buy eCookbook"} lineItems={[Bookitem]} />
             </a>
@@ -426,13 +429,12 @@ const Index = () => {
               <li>Tasting Guide</li>
             </ul>
             <br />
+            <a className="cookbook-button" href="https://www.amazon.com/Bushels-Feasts-Recipes-Gluten-Lifestyle/dp/1735926213/ref=sr_1_1?dchild=1&keywords=bushels+and+feasts&qid=1606956534&sr=8-1" target="_blank">
+              <button> Buy Hardcover Cookbook </button>
+            </a>
             <a className="cookbook-button" href="/">
               <EbookButton label={"Buy eCookBook"} lineItems={[Bookitem]} />
             </a>
-            <p style={{ color: "var(--gray)" }}>
-              At this time, BUSHELS & FEASTS is only available in eBook form. An
-              eBook is a cookbook in an electronic format.
-            </p>
 
             <p style={{ color: "var(--gray)" }}>
               Rather than having to go to the bookstore to purchase your
