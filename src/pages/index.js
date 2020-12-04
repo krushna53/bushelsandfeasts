@@ -129,7 +129,12 @@ const Index = () => {
               containing 10 irresistible, gluten and grain-free, real food
               desserts!
             </p>
-            <a className="cookbook-button" href="https://www.amazon.com/Bushels-Feasts-Recipes-Gluten-Lifestyle/dp/1735926213/ref=sr_1_1?dchild=1&keywords=bushels+and+feasts&qid=1606956534&sr=8-1" target="_blank">
+            <a
+              className="cookbook-button"
+              href="https://www.amazon.com/Bushels-Feasts-Recipes-Gluten-Lifestyle/dp/1735926213/ref=sr_1_1?dchild=1&keywords=bushels+and+feasts&qid=1606956534&sr=8-1"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button> Buy Hardcover Cookbook </button>
             </a>
             <a className="cookbook-button" href="/">
@@ -429,7 +434,12 @@ const Index = () => {
               <li>Tasting Guide</li>
             </ul>
             <br />
-            <a className="cookbook-button" href="https://www.amazon.com/Bushels-Feasts-Recipes-Gluten-Lifestyle/dp/1735926213/ref=sr_1_1?dchild=1&keywords=bushels+and+feasts&qid=1606956534&sr=8-1" target="_blank">
+            <a
+              className="cookbook-button"
+              href="https://www.amazon.com/Bushels-Feasts-Recipes-Gluten-Lifestyle/dp/1735926213/ref=sr_1_1?dchild=1&keywords=bushels+and+feasts&qid=1606956534&sr=8-1"
+              target="_blank"
+              rel="noreferrer"
+            >
               <button> Buy Hardcover Cookbook </button>
             </a>
             <a className="cookbook-button" href="/">
