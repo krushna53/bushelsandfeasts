@@ -21,7 +21,7 @@ class EbookButton extends Component {
               // URL *100%* of the time, it's possible that they could e.g. close the
               // tab between form submission and the redirect.
               successUrl: `https://www.bushelsandfeasts.com/success`,
-              cancelUrl: `https://www.bushelsandfeasts.com/cancel`,
+              cancelUrl: `https://www.bushelsandfeasts.com/`,
             })
             .then(function (result) {
               if (result.error) {

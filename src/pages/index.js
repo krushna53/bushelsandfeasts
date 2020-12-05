@@ -445,14 +445,6 @@ const Index = () => {
             <a className="cookbook-button" href="/">
               <EbookButton label={"Buy eCookBook"} lineItems={[Bookitem]} />
             </a>
-
-            <p style={{ color: "var(--gray)" }}>
-              Rather than having to go to the bookstore to purchase your
-              cookbook or wait for it to arrive in the mail, you can download it
-              to your computer, smartphone, or tablet INSTANTLY for easy access
-              whenever you are ready to shop and cook!
-            </p>
-
             <p style={{ color: "var(--gray)" }}>
               After you purchase your eCookbook, you will receive an email with
               an EPUB (electronic publication) file that you can download to all
