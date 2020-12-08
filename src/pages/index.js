@@ -445,11 +445,6 @@ const Index = () => {
             <a className="cookbook-button" href="/">
               <EbookButton label={"Buy eCookBook"} lineItems={[Bookitem]} />
             </a>
-            <p style={{ color: "var(--gray)" }}>
-              After you purchase your eCookbook, you will receive an email with
-              an EPUB (electronic publication) file that you can download to all
-              of your devices and save for future use.
-            </p>
           </div>
         </Section>
         <Section style={{ width: "100vw", margin: "4rem auto 0rem auto" }}>
