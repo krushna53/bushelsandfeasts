@@ -28,17 +28,6 @@ const BackgroundSection = ({ className, children }) => (
           >
             {children}
           </BackgroundImage>
-          <p
-            style={{
-              fontSize: "20px",
-              margin: "0 auto",
-              color: "black",
-              fontFamily: "Caveat",
-              textAlign: "center",
-            }}
-          >
-            Gluten and Grain Free Recipes Inspired by my Sweet and Savory Life
-          </p>
         </>
       )
     }}
