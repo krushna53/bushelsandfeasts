@@ -137,9 +137,6 @@ const Index = () => {
             >
               <button> Buy Hardcover Cookbook </button>
             </a>
-            <a className="cookbook-button" href="/">
-              <EbookButton label={"Buy eCookbook"} lineItems={[Bookitem]} />
-            </a>
             <ul
               style={{ margin: "1rem 0rem 0rem 0rem", listStyleType: "none" }}
             >
@@ -441,9 +438,6 @@ const Index = () => {
               rel="noreferrer"
             >
               <button> Buy Hardcover Cookbook </button>
-            </a>
-            <a className="cookbook-button" href="/">
-              <EbookButton label={"Buy eCookBook"} lineItems={[Bookitem]} />
             </a>
           </div>
         </Section>
